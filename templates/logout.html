@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+    <!-- Anonymous navbar -->
+    {% include 'anonymous_navbar.html' %}
+
+    <!-- Content block -->
+    <div class="content">
+        {% block body %}{% endblock %}
+    </div>
+
+    <!-- Your other content goes here -->
+
+    <!-- Optional: JavaScript files -->
+    <script src="path/to/jquery.js"></script>
+    <script src="path/to/bootstrap.js"></script>
+    <!-- Your other scripts go here -->
+
+</body>
+</html> {% endcomment %}
+
+{% comment %} {% include 'anonymous_navbar.html' %} {% endcomment %}
+{% block body %}{% endblock %}

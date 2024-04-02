@@ -1,0 +1,1016 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<div class="container-fluid w-100">
+    <!-- hero section -->
+<div class="row  ">
+        <div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div style="margin-top: 8%;" class="col-lg-6 col-md-12 hero-section  my-section1">
+                            <div class="mt-5">
+                                <h1 style="margin-left: 12%;   width: 75%;"
+                                    class=" lh-sm my-section4   my-heading ">Your <span
+                                        class="boujee-text">Subscription</span> <br>
+                                    to
+                                    Versatile
+                                    Mobility
+                                </h1>
+                            </div>
+
+                            <p style="margin-left: 12%; font-size: 23px; width: 75%;"
+                                class=" text-black fw-light  my-section4 font-family lh-base mt-lg-5 paragraph1 my-faq-text1">
+                                Elevate
+                                your ride with seamless car subscriptions. Your dream car, hassle-free, and at
+                                your
+                                fingertips.
+                            </p>
+                            {% if user.is_authenticated %}
+                            <a class="font-family" href="/subscription">
+                                <button style="background-color: #7159e3; margin-left: 12%; " type="button"
+                                    class="btn shadow my-button my-first-btn font-family fw-bolder my-faq-text book-button text-white rounded-5 py-3 px-5 my-4 mt-lg-4 btn-lg ">Book
+                                    Your Wheels</button>
+                            </a>
+                            {% else %}
+                            <a class="font-family" href="/login">
+                                <button style="background-color: #7159e3; margin-left: 12%; " type="button"
+                                    class="btn shadow my-button my-first-btn font-family fw-bolder my-faq-text book-button text-white rounded-5 py-3 px-5 my-4 mt-lg-4 btn-lg ">Book
+                                    Your Wheels</button>
+                            </a>
+                            {% endif %}
+
+                        </div>
+
+                        <div style="margin-top: 1%;" class="col-lg-6 ">
+                            <img class="pic1 " style="margin-left: -10%;" src="static/images/car-image-one.jpg"
+                                width="110%" height="50%" alt="start-up">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div style="margin-top: 8%;" class="col-lg-6 col-md-12 hero-section  my-section1">
+                            <div class="mt-5">
+                                <h1 style="margin-left: 12%;   width: 75%;"
+                                    class=" lh-sm my-section4   my-heading ">Your <span
+                                        class="boujee-text">Subscription</span> <br>
+                                    to
+                                    Versatile
+                                    Mobility
+                                </h1>
+                            </div>
+
+                            <p style="margin-left: 12%; font-size: 23px; width: 75%;"
+                            class=" text-black fw-light  my-section4 font-family lh-base mt-lg-5 paragraph1 my-faq-text1">
+                            Elevate
+                            your ride with seamless car subscriptions. Your dream car, hassle-free, and at
+                            your
+                            fingertips.
+                        </p>
+
+                        {% if user.is_authenticated %}
+                            <a class="font-family" href="/subscription">
+                                <button style="background-color: #7159e3; margin-left: 12%; " type="button"
+                                    class="btn shadow my-button my-first-btn font-family fw-bolder my-faq-text book-button text-white rounded-5 py-3 px-5 my-4 mt-lg-4 btn-lg ">Book
+                                    Your Wheels</button>
+                            </a>
+                            {% else %}
+                            <a class="font-family" href="/login">
+                                <button style="background-color: #7159e3; margin-left: 12%; " type="button"
+                                    class="btn shadow my-button my-first-btn font-family fw-bolder my-faq-text book-button text-white rounded-5 py-3 px-5 my-4 mt-lg-4 btn-lg ">Book
+                                    Your Wheels</button>
+                            </a>
+                            {% endif %}
+
+                        </div>
+
+                        <div style="margin-top: 5%;" class="col-lg-6 ">
+                            <img class="pic1 " style="margin-left: -10%;" src="static/images/left-view-white-scooty.jpg"
+                                width="100%" height="30%" alt="start-up">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div style="margin-top: 8%;" class="col-lg-6 col-md-12 hero-section  my-section1">
+                            <div class="mt-5">
+                                <h1 style="margin-left: 12%;   width: 75%;"
+                                    class=" lh-sm my-section4   my-heading ">Your <span
+                                        class="boujee-text">Subscription</span> <br>
+                                    to
+                                    Versatile
+                                    Mobility
+                                </h1>
+                            </div>
+
+                            <p style="margin-left: 12%; font-size: 23px; width: 75%;"
+                            class=" text-black fw-light  my-section4 font-family lh-base mt-lg-5 paragraph1 my-faq-text1">
+                            Elevate
+                            your ride with seamless car subscriptions. Your dream car, hassle-free, and at
+                            your
+                            fingertips.
+                        </p>
+
+
+                        {% if user.is_authenticated %}
+                        <a class="font-family" href="/subscription">
+                            <button style="background-color: #7159e3; margin-left: 12%; " type="button"
+                                class="btn shadow my-button my-first-btn font-family fw-bolder my-faq-text book-button text-white rounded-5 py-3 px-5 my-4 mt-lg-4 btn-lg ">Book
+                                Your Wheels</button>
+                        </a>
+                        {% else %}
+                        <a class="font-family" href="/login">
+                            <button style="background-color: #7159e3; margin-left: 12%; " type="button"
+                                class="btn shadow my-button my-first-btn font-family fw-bolder my-faq-text book-button text-white rounded-5 py-3 px-5 my-4 mt-lg-4 btn-lg ">Book
+                                Your Wheels</button>
+                        </a>
+                        {% endif %}
+
+                        </div>
+
+                        <div style="margin-top: 5%;" class="col-lg-6 ">
+                            <img class="pic1 " style="margin-left: -10%;" src="static/images/white-suv.jpg"
+                                width="110%" height="50%" alt="start-up">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a> -->
+
+        </div>
+        <!-- <div style="margin-top: 8%;" class="col-lg-6 col-md-12 hero-section  my-section1">
+            <div class="mt-5">
+                <h1 style="margin-left: 12%;  color: #FF8400; width: 75%;"
+                    class=" lh-sm my-section4  our-hero-heading my-heading ">Your <span
+                        class="boujee-text">Subscription</span> <br>
+                    to
+                    Versatile
+                    Mobility
+                </h1>
+            </div>
+
+            <p style="margin-left: 12%; font-size: 23px; font-weight:500; width: 75%;"
+                class=" text-black  my-section4 font-family lh-base mt-lg-5 paragraph1 my-faq-text1">Elevate
+                your ride with seamless car subscriptions. Your dream car, hassle-free, and at your fingertips.
+            </p>
+           
+
+            <a class="font-family" href="get_started.html">
+                <button style="background-color:  #FF8400; margin-left: 12%; " type="button"
+                    class="btn shadow my-button my-first-btn font-family fw-bolder my-faq-text book-button text-black rounded-5 py-3 px-5 my-4 mt-lg-4 btn-lg ">Book
+                    Your Wheels</button>
+            </a>
+
+        </div>
+
+        <div style="margin-top: 1%;" class="col-lg-6 ">
+            <img class="pic1 " src="images/car-image-one.jpg" width="95%" height="50%" alt="start-up">
+        </div> -->
+    </div>
+</div>
+<!-- introuction-->
+<section class="third-section font-family  mb-5 ">
+    <div class=" container-fluid">
+        <div class="row  gx-lg-5 third-row">
+            <div class="mt-3 mx-5 col-lg-5">
+                <img style="margin-left: -10%;" class=" mt-5  pic1 " src="static/images/Premium_Vector___Three_dimensional_image_of_taxi_car_isolated_on_white_background-removebg-preview.png" height="50%" width="120%" alt="start-up">
+            </div>
+            <div style="margin-top: 8%;" class="col-lg-6 my-section4 ">
+                <h1 class="my-heading   mt-lg-5">Introducing <span class="boujee-text">FlexDrive</span> </h1>
+                <h4 class="mt-4 lh-base fw-light mb-5">FlexDrive revolutionizes personal transportation through subscription-based
+                    car rentals. Choose from a diverse fleet, enjoy maintenance, insurance coverage, and
+                    flexibility. No ownership worries or long-term contracts. With a user-friendly platform,
+                    FlexDrive adapts to changing needs, leading the way in convenient, adaptable, and eco-conscious
+                    mobility.
+                </h4>
+
+
+            </div>
+</section>
+<!-- subscription plans -->
+<section class="price_plan_area section_padding_130_80 font-family " id="pricing">
+    <div class="container mt-0">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-sm-8  mt-lg-5 col-lg-8">
+                <!-- Section Heading-->
+                <div class="section-heading text-center wow fadeInUp mt-5" data-wow-delay="0.2s"
+                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                    <h4 class="my-heading " style="color:#7159e3; font-weight: bolder;">Check out our <span
+                            class="boujee-text">Subscription</span> Plans!</h4>
+
+                    </p>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Single Price Plan Area-->
+            <div class="col-12 col-sm-12 my-card col-md-10 col-lg-4">
+                <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s"
+                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <div class="title">
+                        <h3 style="font-weight: bolder;">Basic Plan</h3>
+                        <p>Book your wheels</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price">
+                        <h4> <span style="font-size: 33px;"><i
+                                    class="fa-sharp fa-solid fa-indian-rupee-sign"></i></span> Range</h4>
+                    </div>
+                    <div class="description">
+                        <p style="font-size: 19px; font-weight:600;"><i class="fa-solid fa-crown"></i><i
+                                class="lni lni-checkmark-circle"></i>Quick
+                            and Easy Booking</p>
+                        <p style="font-size: 19px; font-weight:600;"> <i class="fa-solid fa-crown"></i><i
+                                class="lni lni-checkmark-circle"></i>
+                            No Long-Term Commitment.</p>
+                        <p style="font-size: 19px; font-weight:600;"><i class="fa-solid fa-crown"></i><i
+                                class="lni  lni-close"></i>Convenient Pickup
+                            and Return</p>
+                        <!-- <p style="font-size: 19px; font-weight:600;"><i class="fa-solid fa-crown"></i><i
+                                class="lni lni-close"></i>Introductory
+                            Discounts</p> -->
+                        <p style="font-size: 19px; font-weight: 600;"><i class="fa-solid fa-crown"></i><i
+                                class="lni lni-close"></i>Affordability
+                        </p>
+                    </div>
+                    <div class=" button"><a class="btn btn-success my-button  rounded-4 btn-2"
+                            href="/subscription">Subscribe
+                        </a></div>
+                </div>
+            </div>
+            <!-- Single Price Plan Area-->
+            <div class="col-12 col-sm-12 my-card col-md-10 col-lg-4">
+                <div class="single_price_plan wow fadeInUp" data-wow-delay="0.2s"
+                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <div class="title">
+                        <p style="font-size: large;" class="fw-bold">Basic Plus <span>Popular</span></p>
+                        <h3 style="font-weight: bolder;"></h3>
+                        <p>Basic plus</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price">
+                        <h4> <span style="font-size: 33px;"><i
+                                    class="fa-sharp fa-solid fa-indian-rupee-sign"></i></span> Range</h4>
+                    </div>
+                    <div class="description">
+                        <p class="lh-sm" style="font-size: 19px; font-weight: 600;"><i
+                                style="color: rgb(87, 192, 240);" class="fa-solid fa-crown"></i>Extended Travel
+                            Flexibility</p>
+
+                        <p class="lh-sm" style="font-size: 19px; font-weight: 600;"><i
+                                style="color: rgb(87, 192, 240);" class="fa-solid fa-crown"></i>Versatile
+                            Vehicle Selection
+                        </p>
+                        <p class="lh-sm" style="font-size: 19px; font-weight: 600;"><i
+                                style="color: rgb(87, 192, 240);" class="fa-solid fa-crown"></i>Discounted
+                            Add-Ons</p>
+
+                        <p class="lh-sm" style="font-size: 19px; font-weight: 600;"><i
+                                style="color: rgb(87, 192, 240);" class="fa-solid fa-crown"></i>Earn Loyalty
+                            Rewards
+                        </p>
+
+                    </div>
+                    <div class="button"><a class="btn my-button  rounded-4 btn-info" href="/subscription">
+                            Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Price Plan Area-->
+            <div class="col-12 col-sm-12 my-card col-md-10 col-lg-4">
+                <div class="single_price_plan active wow fadeInUp" data-wow-delay="0.2s"
+                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <!-- Side Shape-->
+                    <div class="side-shape "><img src="static/images/popular-pricing.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h3 style="font-weight: bolder;">Premium</h3>
+                        <p> long-term plan</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="price">
+                        <h4><span style="font-size: 33px;"><i
+                                    class="fa-sharp fa-solid fa-indian-rupee-sign"></i></span> Range</h4>
+                    </div>
+                    <div class="description">
+                        <p class="lh-sm" style="font-size: 19px; font-weight: 600;">
+                            <i style="color: rgb(220, 240, 87);" class="fa-solid fa-crown"></i>
+                            Complimentary Maintenance
+                        </p>
+                        <p class="lh-1" style="font-size: 19px; font-weight: 600;">
+                            <i style="color: rgb(220, 240, 87);" class="fa-solid fa-crown"></i>
+                            Exclusive Partner Discounts
+                        </p>
+                        <p class="lh-1" style="font-size: 19px; font-weight: 600;">
+                            <i style="color: rgb(220, 240, 87);" class="fa-solid fa-crown"></i>
+                            Priority Access to New Models
+                        </p>
+                        <p class="lh-1" style="font-size: 19px; font-weight: 600;">
+                            <i style="color: rgb(220, 240, 87);" class="fa-solid fa-crown"></i>
+                            </i>Ultimate Long-Term Comfort.
+                        </p>
+
+
+                    </div>
+                    <div class="button"><a class="btn my-button  rounded-4 btn-warning"
+                            href="/subscription">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- how it works -->
+<!-- testimonial -->
+<section class="h-100 font-family  ">
+    <div class="container-fluid py-2 h-100">
+        <div style="margin-top: 5%;" class="row d-flex justify-content-center align-items-center w-100  h-100">
+            <div class="col col-sm-12">
+                <section class="font-family mt-5 my-crousel-div py-3  my-crousel-section">
+
+                    <h2 class="my-heading mb-5 mt-5  text-center">Look what other people have to say about <span
+                            class="boujee-text"><a class="boujee-text text-decoration-none"
+                                href="index.html">FlexDrive</a></span>
+                    </h2>
+
+                    <div style="margin-left: 10%; width: 80%;" id="carouselExampleIndicator1"
+                        class="carousel my-carousel slide mt-5 mb-5   " data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                        </div>
+                        <div class="carousel-inner mt-5  p-5">
+                            <div class="carousel-item active">
+                                <div style="margin-left: -1%;" class="row">
+                                    <div class="col-md-4 mb-4 col-lg-4 mx-auto  mb-md-0">
+                                        <div style="height: 100%;" class="card my-crousel-card shadow rounded-5">
+                                            <div class="card-body py-4 mt-2">
+
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <img src="static/images/person1.jpg"
+                                                        class="rounded-circle shadow-1-strong" width="100"
+                                                        height="100" />
+                                                </div>
+                                                <h5 class="font-weight-bold text-center"> XYZ
+                                                </h5>
+                                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                                <ul class="list-unstyled d-flex justify-content-center">
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                                    </li>
+                                                </ul>
+                                                <p class="mb-2">
+                                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam suscipit aspernatur dolores, repellat dolorum iusto et voluptas quibusdam vero sequi ea autem optio itaque quaerat ipsum, tempore quisquam asperiores.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4 col-lg-4 mx-auto  mb-md-0">
+                                        <div style="height: 100%;" class="card my-crousel-card shadow rounded-5">
+                                            <div class="card-body py-4 mt-2">
+
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <img src="static/images/person2.jpeg"
+                                                        class="rounded-circle shadow-1-strong" width="100"
+                                                        height="100" />
+                                                </div>
+                                                <h5 class="font-weight-bold text-center"> XYZ
+                                                </h5>
+                                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                                <ul class="list-unstyled d-flex justify-content-center">
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                                    </li>
+                                                </ul>
+                                                <p class="mb-2">
+                                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam suscipit aspernatur dolores, repellat dolorum iusto et voluptas quibusdam vero sequi ea autem optio itaque quaerat ipsum, tempore quisquam asperiores.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4 col-lg-4 mx-auto  mb-md-0">
+                                        <div style="height: 100%;" class="card my-crousel-card shadow rounded-5">
+                                            <div class="card-body py-4 mt-2">
+
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <img src="static/images/person3.jpeg"
+                                                        class="rounded-circle shadow-1-strong" width="100"
+                                                        height="100" />
+                                                </div>
+                                                <h5 class="font-weight-bold text-center"> XYZ
+                                                </h5>
+                                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                                <ul class="list-unstyled d-flex justify-content-center">
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                                    </li>
+                                                </ul>
+                                                <p class="mb-2">
+                                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam suscipit aspernatur dolores, repellat dolorum iusto et voluptas quibusdam vero sequi ea autem optio itaque quaerat ipsum, tempore quisquam asperiores.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div style="margin-left: -1%;" class="row ">
+                                    <div class="col-md-4 mb-4 col-lg-4 mx-auto  mb-md-0">
+                                        <div style="height: 100%;" class="card my-crousel-card shadow rounded-5">
+                                            <div class="card-body py-4 mt-2">
+
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <img src="static/images/person4.jpeg"
+                                                        class="rounded-circle shadow-1-strong" width="100"
+                                                        height="100" />
+                                                </div>
+                                                <h5 class="font-weight-bold text-center"> XYZ
+                                                </h5>
+                                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                                <ul class="list-unstyled d-flex justify-content-center">
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                                    </li>
+                                                </ul>
+                                                <p class="mb-2">
+                                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam suscipit aspernatur dolores, repellat dolorum iusto et voluptas quibusdam vero sequi ea autem optio itaque quaerat ipsum, tempore quisquam asperiores.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4 col-lg-4 mx-auto  mb-md-0">
+                                        <div style="height: 100%;" class="card my-crousel-card shadow rounded-5">
+                                            <div class="card-body py-4 mt-2">
+
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <img src="static/images/person5.jpeg"
+                                                        class="rounded-circle shadow-1-strong" width="100"
+                                                        height="100" />
+                                                </div>
+                                                <h5 class="font-weight-bold text-center"> XYZ
+                                                </h5>
+                                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                                <ul class="list-unstyled d-flex justify-content-center">
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                                    </li>
+                                                </ul>
+                                                <p class="mb-2">
+                                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam suscipit aspernatur dolores, repellat dolorum iusto et voluptas quibusdam vero sequi ea autem optio itaque quaerat ipsum, tempore quisquam asperiores.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4 col-lg-4 mx-auto  mb-md-0">
+                                        <div style="height: 100%;" class="card my-crousel-card shadow rounded-5">
+                                            <div class="card-body py-4 mt-2">
+
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <img src="static/images/person6.webp"
+                                                        class="rounded-circle shadow-1-strong" width="100"
+                                                        height="100" />
+                                                </div>
+                                                <h5 class="font-weight-bold text-center"> XYZ
+                                                </h5>
+                                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                                <ul class="list-unstyled d-flex justify-content-center">
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-info"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                                    </li>
+                                                </ul>
+                                                <p class="mb-2">
+                                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam suscipit aspernatur dolores, repellat dolorum iusto et voluptas quibusdam vero sequi ea autem optio itaque quaerat ipsum, tempore quisquam asperiores.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <button style="height: 10%; width: 2%; margin: auto;"
+                            class="carousel-control-prev rounded-5 bg-black " type="button" data-bs-target="#carouselExampleIndicator1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button style=" height: 10%; width: 2%; margin: auto;"
+                            class="carousel-control-next rounded-5 bg-black " type="button" data-bs-target="#carouselExampleIndicator1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- responsive -->
+<div class="container font-family mb-5 my-crousel-section-hide  ">
+    <h2 class="my-heading mb-5 text-center">Look what other people have to say about <span><a
+                class="boujee-text text-decoration-none" href="index.html">FlexDrive</a></span> </h2>
+    <div class="row mx-1 my-auto  rounded-5">
+        <div id="recipeCarousel" class="carousel my-carousel2  slide w-100 ">
+            <div class="carousel-inner mx-md-2 w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-10 mx-2 mx-md-5">
+                        <div style="height: 100%;" class="my-crousel-card ">
+
+                            <div class=" py-3 py-md-4 mt-2">
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <img src="static/images/person1.jpg"
+                                        class="rounded-circle shadow-1-strong" width="100" height="100" />
+                                </div>
+                                <h5 class="font-weight-bold text-center"> XYZ
+                                </h5>
+                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                <ul class="list-unstyled d-flex justify-content-center">
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                    </li>
+                                </ul>
+                                <p class="mb-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione aspernatur laboriosam recusandae ducimus. Nihil facilis officiis, ipsa ut aperiam nobis quo. Eligendi hic id ullam voluptatum magnam! Laudantium, ipsum molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-10 mx-2 mx-md-5">
+                        <div style="height: 100%;" class="my-crousel-card ">
+
+                            <div class=" py-3 py-md-4 mt-2">
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <img src="static/images/person2.jpeg"
+                                        class="rounded-circle shadow-1-strong" width="100" height="100" />
+                                </div>
+                                <h5 class="font-weight-bold text-center"> XYZ
+                                </h5>
+                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                <ul class="list-unstyled d-flex justify-content-center">
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                    </li>
+                                </ul>
+                                <p class="mb-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione aspernatur laboriosam recusandae ducimus. Nihil facilis officiis, ipsa ut aperiam nobis quo. Eligendi hic id ullam voluptatum magnam! Laudantium, ipsum molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-10 mx-2 mx-md-5">
+                        <div style="height: 100%;" class="my-crousel-card ">
+
+                            <div class=" py-3 py-md-4 mt-2">
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <img src="static/images/person3.jpeg"
+                                        class="rounded-circle shadow-1-strong" width="100" height="100" />
+                                </div>
+                                <h5 class="font-weight-bold text-center"> XYZ
+                                </h5>
+                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                <ul class="list-unstyled d-flex justify-content-center">
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                    </li>
+                                </ul>
+                                <p class="mb-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione aspernatur laboriosam recusandae ducimus. Nihil facilis officiis, ipsa ut aperiam nobis quo. Eligendi hic id ullam voluptatum magnam! Laudantium, ipsum molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-10 mx-2 mx-md-5">
+                        <div style="height: 100%;" class="my-crousel-card ">
+
+                            <div class=" py-3 py-md-4 mt-2">
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <img src="static/images/person4.jpeg"
+                                        class="rounded-circle shadow-1-strong" width="100" height="100" />
+                                </div>
+                                <h5 class="font-weight-bold text-center"> XYZ
+                                </h5>
+                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                <ul class="list-unstyled d-flex justify-content-center">
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                    </li>
+                                </ul>
+                                <p class="mb-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione aspernatur laboriosam recusandae ducimus. Nihil facilis officiis, ipsa ut aperiam nobis quo. Eligendi hic id ullam voluptatum magnam! Laudantium, ipsum molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-10 mx-2 mx-md-5">
+                        <div style="height: 100%;" class="my-crousel-card ">
+
+                            <div class=" py-3 py-md-4 mt-2">
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <img src="static/images/person6.webp"
+                                        class="rounded-circle shadow-1-strong" width="100" height="100" />
+                                </div>
+                                <h5 class="font-weight-bold text-center"> XYZ
+                                </h5>
+                                <h6 class="font-weight-bold my-3 text-center">Profession</h6>
+                                <ul class="list-unstyled d-flex justify-content-center">
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star fa-sm text-info"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                                    </li>
+                                </ul>
+                                <p class="mb-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione aspernatur laboriosam recusandae ducimus. Nihil facilis officiis, ipsa ut aperiam nobis quo. Eligendi hic id ullam voluptatum magnam! Laudantium, ipsum molestiae!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                <span 
+                class="carousel-control-prev-icon py-4 rounded-5 bg-black "
+                    aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon py-4 bg-dark border border-dark rounded-5"
+                    aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!-- faq -->
+<div  class=" mt-3 faq_area section_padding_130 font-family">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12 text-center w-100 col-sm-8 col-lg-6">
+                <!-- Section Heading-->
+                <div class="section_heading  wow fadeInUp" data-wow-delay="0.2s"
+                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <h1 class="my-heading  text-center ">Frequently Asked <span
+                            class="boujee-text">Question's</span> </h1>
+
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+
+            <div class="col-12 w-100 mx-auto  col-sm-10 col-lg-8">
+                <div class="accordion faq-accordian" id="faqAccordion">
+                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0 collapsed my-faq-text1" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What
+                                is FlexDrive?<span class="lni-chevron-up"></span></h6>
+                        </div>
+                        <div class="collapse" id="collapseOne" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p class="my-faq-text">FlexDrive is an innovative car rental service that offers
+                                    subscription-based access to a diverse fleet of vehicles, providing a convenient
+                                    and flexible alternative to traditional car ownership.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="card-header" id="headingTwo">
+                            <h6 class="mb-0 collapsed my-faq-text1" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">How
+                                does FlexDrive's subscription model work?<span class="lni-chevron-up"></span></h6>
+                        </div>
+                        <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p class="my-faq-text">FlexDrive's subscription model allows you to choose a
+                                    subscription plan that suits your needs. With a monthly fee, you gain access to
+                                    a range of vehicles, covering maintenance, insurance, and more, all without the
+                                    commitments of ownership.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s"
+                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="card-header" id="headingThree">
+                            <h6 class="mb-0 collapsed my-faq-text1" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                What's included in the subscription fee?<span class="lni-chevron-up"></span></h6>
+                        </div>
+                        <div class="collapse" id="collapseThree" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p class="my-faq-text">The subscription fee covers a comprehensive package,
+                                    including maintenance, insurance, and even vehicle depreciation. This means you
+                                    can enjoy your chosen vehicle without worrying about the typical costs
+                                    associated with ownership.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s"
+                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="card-header" id="headingfour">
+                            <h6 class="mb-0 collapsed my-faq-text1" data-bs-toggle="collapse"
+                                data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+                                Is there a long-term commitment with FlexDrive?<span class="lni-chevron-up"></span>
+                            </h6>
+                        </div>
+                        <div class="collapse" id="collapsefour" aria-labelledby="headingfour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p class="my-faq-text">No, FlexDrive offers commitment-free subscription options.
+                                    There are no long-term contracts, giving you the freedom to subscribe for the
+                                    duration that suits you best, whether it's for a month or longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s"
+                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="card-header" id="headingfive">
+                            <h6 class="mb-0 collapsed my-faq-text1" data-bs-toggle="collapse"
+                                data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                                What types of vehicles are available in the FlexDrive fleet?<span
+                                    class="lni-chevron-up"></span></h6>
+                        </div>
+                        <div class="collapse" id="collapsefive" aria-labelledby="headingfive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p class="my-faq-text">FlexDrive offers a diverse fleet, including sleek sedans,
+                                    spacious SUVs, eco-conscious electric cars, and more. This variety ensures that
+                                    there's a suitable vehicle for every subscriber.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- form -->
+<section class=" my-element-area  font-family">
+    <div class="row gx-0  py-1 mb-5 ">
+        <div style="margin-top: 6%;" class="col-lg-6 col-md-12   align-self-center">
+            <h1  class="my-heading mx-5 our-hero-heading mb-5 text-center"> <span
+                    class="boujee-text">Contact Us</span> </h1>
+
+            <h1 style="color: #7159e3;" class="my-heading  our-hero-heading mb-5 text-center">We Love Conversation.
+            </h1>
+            <h1  class="my-heading our-hero-heading mb-5 text-center"> <span
+                    class="boujee-text"> Let's Talk </span> </h1>
+        </div>
+        <div style="margin-top: 10%;" class="col-lg-6 ">
+            <div class="  mt-lg-0 mt-5 mx-5 mb-lg-0 mb-5 ">
+                <div
+              
+                    class="form-section shadow-lg col-lg-12 rounded-5 justify-content-center  card-body text-center">
+                    <!-- <h2 class="form-heading text-white text-center mt-5 fw-bold">Limited Seats, Enquire Now</h2> -->
+                    <form action="/contact" method="POST" class="mt-5">
+                        {% csrf_token %}
+                        <div class="form-row mt-5 text-black">
+                            <label class="border-black" for="name"></label>
+                            <input class="text-start " type="text" id="name" placeholder="Full Name"
+                                name="name" required>
+                        </div>
+                        <!-- <div class="form-row ">
+                                <label for="mobile-number"></label>
+                                <input class="text-start" type="tel" id="mobile-number" placeholder="Mobile Number"
+                                    name="mobile-number" required>
+                            </div> -->
+                        <!-- <div class="form-row">
+                                <label for="subject"> </label>
+                                <input class="text-start " type="text" id="student-grade" placeholder=" Student Grade"
+                                    name="student-grade" required>
+                            </div> -->
+                        <div class="form-row">
+                            <label for="email"></label>
+                            <input class="text-start " type="email" id="email" placeholder=" Your Email ID"
+                                name="email" required>
+                        </div>
+                        <!-- <div class="form-row">
+                                <label for="role"></label>
+                                <select class="text-start " id="role" name="role" required>
+                                    <option value="parent">Parent</option>
+                                    <option value="student">Student</option>
+                                </select>
+                            </div> -->
+                        <div class="form-row">
+                            <label for="hear-about-us"></label>
+                            <input class="text-start " type="text" id="hear-about-us"
+                                placeholder="Where did you hear about us" name="hear-about-us" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="desc"></label>
+                            <textarea name="desc" class="form-control-textarea" id="desc"
+                                placeholder="Message"></textarea>
+                            <!-- <input class="text-start " type="text" id="hear-about-us"
+                                    placeholder="Where did you hear about us" name="hear-about-us" required> -->
+                        </div>
+
+
+                        <button style=" background-color:  #a897fc; margin-top: 3%; font-weight: bold;"
+                            type="submit"
+                            class="btn  my-faq-text  shadow my-button text-black rounded-4 py-3 px-5 my-5 btn-lg ">Send
+                            Message</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% endblock body %}

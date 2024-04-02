@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+ <!-- form -->
+ <section class=" my-element-area  font-family">
+    <div class="row gx-0  py-5 mb-5 ">
+        <div style="margin-top: 6%;" class="col-lg-6 col-md-12   align-self-center">
+            <h1  class="my-heading mx-5 our-hero-heading mb-5 mt-5 text-center"> <span
+                    class="boujee-text">Contact Us</span> </h1>
+
+            <h1 style="color: #7159e3;" class="my-heading  our-hero-heading mb-5 text-center">We Love Conversation.
+            </h1>
+            <h1  class="my-heading our-hero-heading mb-5 text-center"> <span
+                    class="boujee-text"> Let's Talk </span> </h1>
+        </div>
+        <div style="margin-top: 10%;" class="col-lg-6 ">
+            <div class="  mt-lg-0 mt-5 mx-5 mb-lg-0 mb-5 ">
+                <div
+              
+                    class="form-section shadow-lg col-lg-12 rounded-5 justify-content-center  card-body text-center">
+                    <!-- <h2 class="form-heading text-white text-center mt-5 fw-bold">Limited Seats, Enquire Now</h2> -->
+                    <form action="/contact" method="POST" class="mt-5">
+                        {% csrf_token %}
+                        <div class="form-row mt-5 text-black">
+                            <label class="border-black" for="name"></label>
+                            <input class="text-start " type="text" id="name" placeholder="Full Name"
+                                name="name" required>
+                        </div>
+                        <!-- <div class="form-row ">
+                                <label for="mobile-number"></label>
+                                <input class="text-start" type="tel" id="mobile-number" placeholder="Mobile Number"
+                                    name="mobile-number" required>
+                            </div> -->
+                        <!-- <div class="form-row">
+                                <label for="subject"> </label>
+                                <input class="text-start " type="text" id="student-grade" placeholder=" Student Grade"
+                                    name="student-grade" required>
+                            </div> -->
+                        <div class="form-row">
+                            <label for="email"></label>
+                            <input class="text-start " type="email" id="email" placeholder=" Your Email ID"
+                                name="email" required>
+                        </div>
+                        <!-- <div class="form-row">
+                                <label for="role"></label>
+                                <select class="text-start " id="role" name="role" required>
+                                    <option value="parent">Parent</option>
+                                    <option value="student">Student</option>
+                                </select>
+                            </div> -->
+                        <div class="form-row">
+                            <label for="hear-about-us"></label>
+                            <input class="text-start " type="text" id="hear-about-us"
+                                placeholder="Where did you hear about us" name="hear-about-us" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="desc"></label>
+                            <textarea name="desc" class="form-control-textarea" id="desc"
+                                placeholder="Message"></textarea>
+                            <!-- <input class="text-start " type="text" id="hear-about-us"
+                                    placeholder="Where did you hear about us" name="hear-about-us" required> -->
+                        </div>
+
+
+                        <button style=" background-color:  #a897fc; margin-top: 3%; font-weight: bold;"
+                            type="submit"
+                            class="btn  my-faq-text  shadow my-button text-black rounded-4 py-3 px-5 my-5 btn-lg ">Send
+                            Message</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% endblock body %}

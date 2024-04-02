@@ -1,0 +1,1409 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock title %} | FlexDrive</title>
+        <link rel="icon" type="image/x-icon" href="../static/images/favicon1.ico" width="180%" height="180%">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Revolutionary Mobility: Unlock your Freedom with FlexDrive Subscription">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="static/css/style.css">
+        
+        {% comment %} fonts {% endcomment %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900;1000&display=swap"
+        rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <!-- Bootstrap CSS -->
+        {% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> {% endcomment %}
+    {% comment %} fontawesome {% endcomment %}
+    <script src="https://kit.fontawesome.com/5d44f58943.js" crossorigin="anonymous"></script>
+    <style>
+        /* student placement corporate and entrepreneurship courses page css */
+
+
+
+
+
+
+/*  */
+/*  */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.font-family {
+    font-family: 'Nunito';
+
+}
+
+.my-heading {
+    font-size: 50px;
+    color: #7159e3;
+    font-weight: bolder;
+}
+
+/* text -animation */
+.boujee-text {
+    --bg-size: 400%;
+    --color-one: #58ebfb;
+    /* --color-one: #000000; */
+    /* --color-two: hsl(318, 88%, 80%); */
+    --color-two: hsl(277, 100%, 73%);
+    /* font-size: clamp(3rem, 25vmin, 8rem); */
+    background: linear-gradient(90deg,
+            var(--color-one),
+            var(--color-two),
+            var(--color-one)) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: move-bg 8s infinite linear;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .boujee-text {
+        animation: move-bg 8s linear infinite;
+    }
+
+    @keyframes move-bg {
+        to {
+            background-position: var(--bg-size) 0;
+        }
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .boujee-text-1 {
+        animation: move-bg 10s linear infinite;
+    }
+
+    @keyframes move-bg {
+        to {
+            background-position: var(--bg-size) 0;
+        }
+    }
+}
+
+.our-hero-heading {
+    font-size: 70px !important;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-weight: 700 !important;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-size: 20px;
+
+}
+
+.navbar-toggler {
+    background: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+
+.container-fluid {
+    padding: 0% 2%;
+}
+
+.navbar {
+    padding: 0 0 0rem;
+}
+
+.navbar-brand {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    color: #FF8400;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+}
+
+.navbar-nav .nav-link:hover,
+.dropdown-submenu:hover>.dropdown-menu {
+    /* color: #FF8400; */
+    display: block;
+}
+
+
+.dropdown-menu .dropdown-item {
+    color: black;
+}
+
+.dropdown-item {
+    font-size: 18px;
+}
+
+
+/* .dropdown-item:hover{
+    background-color: #FF8400 !important;
+} */
+.dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+}
+/* 
+.logo {
+    width: 120%;
+} */
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.corporate-button {
+    color: white !important;
+}
+
+
+
+.pic1 {
+    height: 95%;
+    margin-top: 4%;
+}
+
+
+.my-card {
+    transition: all 0.5s ease-in-out;
+}
+
+.my-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.my-button {
+    transition: all 2s ease-in-out;
+
+}
+
+.my-button:hover {
+    transform: scale(1.1);
+    /* background-color: orangered; */
+    cursor: pointer;
+}
+
+
+/* price -page */
+.price_plan_area {
+    position: relative;
+    /* z-index: 1; */
+    background-color: #f5f5ff;
+}
+
+.single_price_plan {
+    position: relative;
+    /* z-index: 1; */
+    border-radius: 0.5rem 0.5rem 0 0;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    padding: 3rem 4rem;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single_price_plan {
+        padding: 3rem;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .single_price_plan {
+        padding: 3rem;
+    }
+}
+
+.single_price_plan::after {
+    position: absolute;
+    content: "";
+    /* background-image: url("https://bootdey.com/img/half-circle-pricing.png"); */
+    background-repeat: repeat;
+    width: 100%;
+    height: 17px;
+    bottom: -17px;
+    /* z-index: 1; */
+    left: 0;
+}
+
+.single_price_plan .title {
+    text-transform: capitalize;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 2rem;
+}
+
+.single_price_plan .title span {
+    color: #ffffff;
+    padding: 0.2rem 0.6rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #2ecc71;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.single_price_plan .title h3 {
+    font-size: 1.25rem;
+}
+
+.single_price_plan .title p {
+    font-weight: 300;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.single_price_plan .title .line {
+    width: 80px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #3f43fd;
+}
+
+.single_price_plan .price {
+    margin-bottom: 1.5rem;
+}
+
+.single_price_plan .price h4 {
+    position: relative;
+    /* z-index: 1; */
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #3f43fd;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right top, from(#e24997), to(#2d2ed4));
+    background-image: linear-gradient(90deg, #e24997, #2d2ed4);
+}
+
+.single_price_plan .description {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.single_price_plan .description p {
+    line-height: 16px;
+    margin: 0;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.single_price_plan .description p i {
+    color: #2ecc71;
+    margin-right: 0.5rem;
+}
+
+.single_price_plan .description p .lni-close {
+    color: #e74c3c;
+}
+
+.single_price_plan.active,
+.single_price_plan:hover,
+.single_price_plan:focus {
+    -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+    box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+}
+
+.single_price_plan .side-shape img {
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.section-heading h3 {
+    margin-bottom: 1rem;
+    font-size: 3.125rem;
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.section-heading .line {
+    width: 120px;
+    height: 5px;
+    margin: 30px auto 0;
+    border-radius: 6px;
+    background: #2d2ed4;
+    background: -webkit-gradient(linear, left top, right top, from(#e24997), to(#2d2ed4));
+    background: linear-gradient(to right, #e24997, #2d2ed4);
+}
+
+/*  */
+.footer-images {
+    vertical-align: bottom;
+}
+
+/*  */
+
+
+/* faq */
+.section_padding_130 {
+    padding-top: 90px;
+    padding-bottom: 130px;
+}
+
+.faq_area {
+    position: relative;
+    /* z-index: 1; */
+    background-color: #f5f5ff;
+}
+
+.faq-accordian {
+    position: relative;
+    /* z-index: 1; */
+}
+
+.faq-accordian .card {
+    position: relative;
+    /* z-index: 1; */
+    margin-bottom: 1.5rem;
+}
+
+.faq-accordian .card:last-child {
+    margin-bottom: 0;
+}
+
+.faq-accordian .card .card-header {
+    background-color: #ffffff;
+    padding: 0;
+    border-bottom-color: #ebebeb;
+}
+
+.faq-accordian .card .card-header h6 {
+    cursor: pointer;
+    padding: 1.75rem 2rem;
+    color: #3f43fd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.faq-accordian .card .card-header h6 {
+    font-size: 1.4rem;
+}
+
+.faq-accordian .card .card-header h6.collapsed {
+    color: #070a57;
+}
+
+.faq-accordian .card .card-header h6.collapsed span {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.faq-accordian .card .card-body {
+    padding: 1.75rem 2rem;
+}
+
+.faq-accordian .card .card-body p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* form */
+.my-form-div{
+    margin-left: -6%;
+}
+
+.my-element-area {
+    position: relative;
+    /* z-index: 1; */
+    /* padding-bottom: 130px; */
+    /* background-color: #FF8400; */
+    /* background-color: rgba(250, 117, 0, 0.696); */
+    /* background-color: rgb(224, 224, 224); */
+    padding: 0;
+ 
+
+}
+.form-section {
+
+    padding: 5%;
+    margin: auto;
+    width: 100%;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    /* width: 200px; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: black;
+
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 60%;
+    padding: 15px;
+    border-radius: 3px;
+    border: black 1px solid;
+    /* background-color: #97cbf6c1; */
+   
+}
+.form-control-textarea{
+    width: 60%;
+    padding: 15px;
+    border-radius: 3px;
+    border: black 1px solid;
+    /* background-color: #97cbf6c1; */
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    width: 60%;
+}
+
+/* footer */
+.footer-links{
+    font-weight: bold; 
+    font-size: 17px;
+    color: black ;
+    text-decoration: none;
+
+}
+.footer-links:hover{
+    color: black;
+}
+/* .my-slide3 {
+    display: none;
+} */
+.my-crousel-section-hide {
+    display: none !important;
+}
+@media (200px <=width <=1400px) {
+
+    .my-crousel-section {
+        display: none !important;
+    }
+
+    .my-crousel-section-hide {
+        display: block !important;
+    }
+}
+@media (200px <=width <=1200px){
+    .my-contact-heading{
+        margin-top: 18% !important;
+    }
+
+}
+@media (200px <=width <=1200px) {
+    .pic1 {
+        display: none;
+    }
+    .submit-btn {
+        margin-top: 5%;
+    }
+
+    .kids-heading {
+        width: 80% !important;
+        margin-left: 30% !important;
+
+    }
+
+    .kids-button {
+        margin-left: 30% !important;
+        width: 65%;
+    }
+
+    .my-section1 {
+        width: 98% !important;
+        display: block;
+        margin-top: 12% !important;
+        /* margin-left: 2% !important; */
+    }
+    .faq-heading {
+        margin-left: 10% !important;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select {
+        width: 80%;
+
+    }
+    .form-control-textarea{
+        width: 80%;
+   
+    }
+    .my-circle-images {
+        display: none;
+    }
+
+    /* .my-silde2{
+        display: none;
+    }
+    .my-slide3{
+        display: block;
+    } */
+    .curriculum-heading{
+        width: 75% !important;
+    }
+  
+
+}
+
+/* font-size */
+@media (200px <=width <=700px) {
+    .my-heading {
+        font-size: 30px;
+    }
+
+    .my-faq-text {
+        font-size: 15px !important;
+    }
+
+    .our-hero-heading {
+        font-size: 33px !important;
+    }
+    .my-faq-text1 {
+        font-size: 19px !important;
+    }
+    
+
+}
+
+
+
+@media (450px <=width <=590px){
+    .my-section1{
+        margin-top: 19% !important;
+    }
+}
+
+@media (200px <=width <=768px) {
+   
+    .navbar-nav .nav-link:hover,
+    .dropdown-submenu>.dropdown-menu {
+        color: #FF8400;
+        display: block;
+    }
+
+    .corporate-button {
+        margin-left: 2%;
+
+    }
+    
+
+    .cb {
+        padding-left: 50%;
+    }
+    .my-section4{
+        width: 97% !important;
+        display: block;
+        margin-left: 3.5% !important;
+    }
+}
+@media (767px <=width <=1200px){
+    .my-section4{
+        width: 90% !important;
+        display: block;
+        margin-left: 6% !important;
+    }
+}
+
+/* navbar */
+
+
+/* navbar */
+@media (10px <=width <=768px) {
+
+    .navbar-nav .nav-link:hover,
+    .dropdown-submenu>.dropdown-menu {
+        color: #FF8400;
+        display: block;
+    }
+    .corporate-button {
+        margin-left: 2%;
+
+    }
+    .cb {
+        padding-left: 50%;
+    }
+}
+
+/* logo img */
+@media (1600px <=width <=1700px) {
+    .logo-img {
+        width: 100%;
+        margin-left: -10%;
+
+    }
+}
+
+@media (1500px <=width <=1599px) {
+    .logo-img {
+        width: 100%;
+        margin-left: 3%;
+
+    }
+}
+
+@media (1700px <=width <=1800px) {
+    .logo-img {
+        width: 100%;
+        margin-left: -28%;
+
+    }
+}
+
+@media (1800px <=width <=1850px) {
+    .logo-img {
+        width: 100%;
+        margin-left: -50%;
+    }
+}
+
+@media (1850px <=width <=1900px) {
+    .logo-img {
+        width: 100%;
+        margin-left: -55%;
+    }
+}
+
+@media (1900px <=width <=1950px) {
+    .logo-img {
+        width: 100%;
+        margin-left: -64%;
+    }
+}
+
+@media (1950px <=width <=2000px) {
+    .logo-img {
+        width: 100%;
+        margin-left: -70%;
+    }
+}
+
+@media (1100px <=width <=1200px) {
+    .logo-img {
+        width: 90%;
+        margin-left: -18%;
+
+    }
+
+    .my-logo-div {
+        width: 40% !important;
+    }
+}
+
+@media (1000px <=width <=1100px) {
+    .logo-img {
+        width: 90%;
+        margin-left: 1%;
+
+    }
+
+    .my-logo-div {
+        width: 40% !important;
+    }
+}
+@media (950px <=width <=1000px) {
+    .logo-img {
+        width: 60%;
+        margin-left: -14%;
+
+    }
+
+    .my-logo-div {
+        width: 70% !important;
+    }
+}
+@media (900px <=width <=950px) {
+    .logo-img {
+        width: 60%;
+        margin-left: -7%;
+
+    }
+
+    .my-logo-div {
+        width: 70% !important;
+    }
+}
+
+@media (800px <=width <=900px) {
+    .logo-img {
+        width: 40%;
+        margin-left: -2%;
+
+    }
+
+    .my-logo-div {
+        width: 70% !important;
+    }
+}
+@media (770px <=width <=800px) {
+    .logo-img {
+        width: 80%;
+        margin-left: 7%;
+
+    }
+
+    .my-logo-div {
+        width: 40% !important;
+    }
+}
+@media (768px <=width <=769px) {
+    .logo-img {
+        width: 80%;
+        margin-left: 20%;
+
+    }
+
+    .my-logo-div {
+        width: 40% !important;
+    }
+}
+@media (750px <=width <=767px) {
+    .logo-img {
+        width: 80%;
+        margin-left: -18%;
+
+    }
+
+    .my-logo-div {
+        width: 40% !important;
+    }
+}
+
+
+@media (700px <=width <=750px) {
+    .logo-img {
+        width: 80%;
+        margin-left: -12%;
+
+    }
+
+    .my-logo-div {
+        width: 60% !important;
+    }
+}
+
+@media (650px <=width <=700px) {
+    .logo-img {
+        width: 60%;
+        margin-left: -8%;
+
+    }
+
+    .my-logo-div {
+        width: 70% !important;
+    }
+}
+
+@media (600px <=width <=650px) {
+    .logo-img {
+        width: 60%;
+        margin-left: -5%;
+
+    }
+
+    .my-logo-div {
+        width: 70% !important;
+    }
+}
+
+@media (550px <=width <=600px) {
+    .logo-img {
+        width: 60%;
+        margin-left: 4% !important;
+
+    }
+
+    .my-logo-div {
+        width: 70% !important;
+    }
+}
+
+@media (500px <=width <=550px) {
+    .logo-img {
+        width: 60%;
+        margin-left: 13% !important;
+
+    }
+
+    .my-logo-div {
+        width: 70% !important;
+    }
+}
+
+@media (400px <=width <=500px) {
+    .logo-img {
+        width: 60%;
+        margin-left: 8%;
+
+    }
+
+    .my-logo-div {
+        width: 70% !important;
+    }
+}
+
+@media (10px <=width <=400px) {
+    .logo-img {
+        width: 60%;
+        margin-left: 9% !important;
+
+    }
+    .my-logo-div {
+        width: 70% !important;
+      
+    }
+
+}
+
+
+
+/*  */
+
+
+
+
+
+        .alert {
+            padding: 20px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+    </style>
+    <style>
+        .main-desc {
+        margin: 20px auto;
+        max-width: 1000px;
+        background-color: white;
+        padding: 0;
+    }
+    
+    
+    .form-control {
+        height: 25px;
+        width: 150px;
+        border: none;
+        border-radius: 0;
+        font-weight: 800;
+        padding: 0 0 5px 0;
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        border-bottom: 2px solid #ccc;
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .form-control:focus {
+        box-shadow: none;
+        border-bottom: 2px solid #ccc;
+        background-color: transparent;
+    }
+    
+    .form-control2 {
+        font-size: 14px;
+        height: 20px;
+        width: 55px;
+        border: none;
+        border-radius: 0;
+        font-weight: 800;
+        padding: 0 0 5px 0;
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        border-bottom: 2px solid #ccc;
+        margin: 0;
+    }
+    
+    .form-control2:focus {
+        box-shadow: none;
+        border-bottom: 2px solid #ccc;
+        background-color: transparent;
+    }
+    
+    .form-control3 {
+        font-size: 14px;
+        height: 20px;
+        width: 30px;
+        border: none;
+        border-radius: 0;
+        font-weight: 800;
+        padding: 0 0 5px 0;
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        border-bottom: 2px solid #ccc;
+        margin: 0;
+    }
+    
+    .form-control3:focus {
+        box-shadow: none;
+        border-bottom: 2px solid #ccc;
+        background-color: transparent;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    .text-muted-car {
+        font-size: 10px;
+        color: #7159e3 !important;
+    }
+    
+    .text-muted-car {
+        color: #6c757d;
+        font-size: 13px;
+    }
+    
+    .fs-14 {
+        font-size: 14px;
+    }
+    
+    .btn.btn-primary {
+        width: 100%;
+        height: 55px;
+        border-radius: 0;
+        padding: 13px 0;
+        background-color: black;
+        border: none;
+        font-weight: 600;
+    }
+    
+    .btn.btn-primary:hover .fas {
+        transform: translateX(10px);
+        transition: transform 0.5s ease
+    }
+    
+    
+    .fw-900 {
+        font-weight: 900;
+    }
+    
+    ::placeholder {
+        font-size: 12px;
+    }
+    
+    .ps-30 {
+        padding-left: 30px;
+    }
+    
+    .h4-car {
+        font-family: 'Work Sans', sans-serif !important;
+        font-weight: 800 !important;
+        color: #7159e3 !important;
+    }
+    
+    
+    </style>
+    </head>
+{% comment %} <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %} | FlexDrive</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon1.ico" width="180%" height="180%">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revolutionary Mobility: Unlock your Freedom with FlexDrive Subscription">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="static/css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+            "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.esm.min.js"
+          }
+        }
+        </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900;1000&display=swap"
+        rel="stylesheet">
+  
+    <script src="https://kit.fontawesome.com/5d44f58943.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</head> {% endcomment %}
+
+<body>
+    <!-- page-1 -->
+     <!-- my-nav -->
+
+    <section style="background-color: white;" class="colored-section  font-family" id="title">
+        <!-- Navbar for anonymous users -->
+  {% comment %} {% if not user.is_authenticated %}
+  {% include 'anonymous_navbar.html' %}
+{% endif %}
+
+<!-- Navbar for authenticated users -->
+{% if user.is_authenticated %}
+  {% include 'authenticated_navbar.html' %}
+{% endif %} {% endcomment %}
+        
+    </section>
+    {% comment %} alert {% endcomment %}
+    {% if messages %}
+    <div class="container d-flex justify-content-center align-items-center" >
+        {% for message in messages %}
+        <div  class="row ">
+            <div class="col-md-12 mt-5 mb-0  custom-alert">
+               
+                <div id="myAlert" class="alert mt-5 bg-success">
+                    
+                    <strong>Note:</strong> {{ message }}
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert()"></button>
+                </div>
+                
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div class="container ">
+
+        <div class="container">
+            <div class="row  m-0">
+                <div class="col-lg-7 pb-5 py-5 pe-lg-5">
+                    <div class="row py-5">
+                        <h2 style="margin-top: 10%;" class="section-heading ">Subscription Details</h2>
+                        <div class="col-12 p-5">
+                            <img style="height: 80%; width: 50%;" src="{{ car.image.url }}" alt="{{ car.model }} Image">
+                        </div>
+                        <div class="row m-0 py-5 bg-light">
+                            <div class="col-md-4 col-6 ps-30 pe-0 my-4">
+                                <p class="text-muted text-muted-car">Mileage</p>
+                                <p class="h5">{{car.mileage}}<span class="ps-1">Km</span></p>
+                            </div>
+                            <div class="col-md-4 col-6  ps-30 my-4">
+                                <p class="text-muted text-muted-car">Rating</p>
+                                <p class="h5 m-0">{{car.rating}}</p>
+                            </div>
+                            <div class="col-md-4 col-6 ps-30 my-4">
+                                <p class="text-muted text-muted-car">Seats</p>
+                                <p class="h5 m-0">{{car.seats}}</p>
+                            </div>
+                            <div class="col-md-4 col-6 ps-30 my-4">
+                                <p class="text-muted text-muted-car">Fuel Type</p>
+                                <p class="h5 m-0">{{car.fuel_type}}</p>
+                            </div>
+                            <div class="col-md-4 col-6 ps-30 my-4">
+                                <p class="text-muted text-muted-car">Color</p>
+                                <p class="h5 m-0">{{car.color}}</p>
+                            </div>
+                            <div class="col-md-4 col-6 ps-30 my-4">
+                                <p class="text-muted text-muted-car">ID</p>
+                                <p class="h5 m-0">{{car.id}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 p-0 py-5 ps-lg-4 mt-5">
+                    <div class="row m-0">
+                        <div class="col-12 py-5 px-4">
+                            <div class="d-flex align-items-end mt-4 mb-2">
+                                <p class="h4 h4-car m-0">{{car.carmodel}}</p>
+                                {% comment %} <P class="ps-3 textmuted ">1L</P> {% endcomment %}
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 mt-4">
+                                <p class="textmuted ">Subtotal</p>
+                                <p class="fs-14 fw-bold"><span class="fa-solid fa-rupee-sign pe-1"></span>{{car.price}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="textmuted ">Shipping</p>
+                                <p class="fs-14 fw-bold">Free</p>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <p class="textmuted  fw-bold">Total</p>
+                                <div class="d-flex align-text-top ">
+                                    <span class="fa-solid fa-rupee-sign mt-2 pe-1 fs-14 "></span><span class="h4 h4-car">{{car.price}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0">
+                            {% comment %} <div class="row bg-light m-0">
+                                <div class="col-12 px-4 my-4">
+                                    <p class="fw-bold">Payment detail</p>
+                                </div>
+                                <div class="col-12 px-4">
+                                    <div class="d-flex  mb-4">
+                                        <span class="">
+                                            <p class="text-muted text-muted-car">Card number</p>
+                                            <input class="form-control" type="text" value="4485 6888 2359 1498"
+                                                placeholder="1234 5678 9012 3456">
+                                        </span>
+                                        <div class=" w-100 d-flex flex-column align-items-end">
+                                            <p class="text-muted text-muted-car">Expires</p>
+                                            <input class="form-control2" type="text" value="01/2020" placeholder="MM/YYYY">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-5">
+                                        <span class="me-5">
+                                            <p class="text-muted text-muted-car">Cardholder name</p>
+                                            <input class="form-control" type="text" value="David J.Frias"
+                                                placeholder="Name">
+                                        </span>
+                                        <div class="w-100 d-flex flex-column align-items-end">
+                                            <p class="text-muted text-muted-car">CVC</p>
+                                            <input class="form-control3" type="text" value="630" placeholder="XXX">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> {% endcomment %}
+                            <div class="row m-0">
+                                <div class="col-12  mb-4 p-0">
+                                  <!-- Your HTML template -->
+                                  <form method="post" action="{% url 'confirm_subscription' car.id %}">
+                                    {% csrf_token %}
+                                    <button class="btn btn-primary" type="submit">Confirm Subscription<span class="fas fa-arrow-right ps-2"></span></button>
+                                </form>
+                                
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+        
+        
+        
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Footer -->
+    <footer style="background-color: #a897fc; color: #ffffff;" class=" font-family text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p style="font-weight: bold; font-size: 17px;" class="text-black">
+                    "FlexDrive: Elevate your ride with seamless car subscriptions. Your dream car, hassle-free, and at
+                    your fingertips."
+                </p>
+            </section>
+            <!-- Section: Text -->
+            <!--Grid row-->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4  mb-md-0">
+
+                    <ul class="list-unstyled mb-2">
+                        <li class="mb-2">
+                            <a  href="/"
+                                class="footer-links">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a  href="/subscription"
+                                class="footer-links">Subscription</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="/blogs"
+                                class="footer-links">Blogs</a>
+                        </li>
+                        <li class="mb-2">
+                            <a  href="/about"
+                                class="footer-links">About Us</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+
+                    <ul class="list-unstyled mb-2">
+                        <li class="mb-2">
+                            <a  href="/faq"
+                                class=" footer-links">FAQ's</a>
+                        </li>
+                        <li class="mb-2">
+                            <a  href="/testimonial"
+                                class=" footer-links">Testimonial</a>
+                        </li>
+                        <li class="mb-2">
+                            <a  href="/contact" class=" footer-links">Contact Us</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="footer-links" href="/privacy_policy">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Grid row-->
+            </section>
+        </div>
+
+        <!-- Grid container -->
+        <!-- Section: Social media -->
+        <section class="mb-1 mt-2 ">
+            <!-- Facebook -->
+            <a class="btn btn-outline-dark text-black btn-floating m-1" href="" target="_blank" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-dark text-black btn-floating m-1" href="" target="_blank" role="button"><i
+                    class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-dark text-black btn-floating m-1" href="" target="_blank" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <!-- Github -->
+            <!-- Linkedin -->
+            <!-- <a class="btn btn-outline-dark text-black btn-floating m-1"
+             href="" target="_blank" role="button"><i
+                 class="fab fa-linkedin-in"></i></a> -->
+
+        </section>
+        <!-- Copyright -->
+        <div class="copyright text-black mt-3 ">
+
+            <!-- <h5 class="fw-bold">Headquarter</h5>
+            <h6 class="fw-bold">Mumbai, Maharashtra</h6> -->
+
+        </div>
+        <div class="text-center text-black p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i
+                class="fa-solid fa-heart" style="color: #fc0303;"></i> by <a href="index.html"
+                class="text-black">FlexDrive</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+<!-- Bootstrap JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    {% comment %} <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> {% endcomment %}
+
+    <script>
+        function closeAlert() {
+            var alert = document.getElementById('myAlert');
+            alert.style.display = 'none';
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.offcanvas-body .dropdown-toggle').on('click', function (e) {
+                e.preventDefault();
+                $(this).next('.dropdown-menu').toggle();
+            });
+
+            $('.offcanvas-body .dropdown-item').on('click', function () {
+                $('#navbarOffcanvas').offcanvas('hide');
+            });
+        });
+    </script>
+    <!-- <script type="text/javascript">
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script> -->
+</body>
+
+</html>
